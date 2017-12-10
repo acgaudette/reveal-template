@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 mkdir -p slides
-printf "## おっす！" > slides/title.md
+
+[ ! -f slides/title.md ] && printf "## おっす！" > slides/title.md
 
 git clone https://github.com/hakimel/reveal.js.git
 cd reveal.js
